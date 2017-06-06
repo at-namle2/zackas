@@ -1,0 +1,53 @@
+.gallery {
+  width: 100%;
+  padding: 70px 0 40px;
+  .gallery-item {
+    float: left;
+    width: 360px;
+    margin-right: 30px;
+    &:nth-child(3) {
+      margin-right: 0 !important;
+    }
+    .item-img {
+      width: 100%;
+    }
+  }
+}
+.new-arrivals {
+  padding-bottom: 30px;
+}
+.gallary {
+  width: 100%;
+  .gallary-item {
+    float: left;
+    width: 260px;
+    margin-right: 32px;
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+    .item-img {
+      width: 100%;
+    }
+  .feture-desc {
+    padding-top: 14px;
+    }
+  }
+}
+
+.menu-feature {
+  @extend %mr-pd;
+  padding: 80px 0 30px;
+  .main-feature-item {
+    display: inline-block;
+    padding-right: 40px;
+    .fea {
+      color: map-get($color, black);
+      text-decoration: none;
+      font-weight: 700;
+      &.active {
+        color: map-get($color, orange);
+      }
+    }
+  }
+
+}

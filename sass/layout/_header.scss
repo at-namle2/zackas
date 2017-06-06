@@ -99,7 +99,7 @@
 }
 .main-nav {
   .main-menu {
-     @extend %mr-pd;
+    @extend %mr-pd;
     .main-menu-item {
       display: inline-block;
       padding-right: 40px;
