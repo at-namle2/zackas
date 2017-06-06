@@ -22,7 +22,7 @@
     float: left;
     width: 260px;
     margin-right: 32px;
-    &:nth-child(4) {
+    &:nth-child(4n+4) {
       margin-right: 0;
     }
     .item-img {
@@ -33,7 +33,6 @@
     }
   }
 }
-
 .menu-feature {
   @extend %mr-pd;
   padding: 80px 0 30px;
@@ -49,5 +48,4 @@
       }
     }
   }
-
 }
