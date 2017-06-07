@@ -8,6 +8,12 @@
         color: map-get($color, white);
         .fap {
           padding: 8px;
+          }
+        .demo {
+          @include transition(all 0.5s ease-in-out);
+          &:hover {
+            color: map-get($color, orange);
+          }
         }
       }
     }
@@ -20,6 +26,7 @@
           display: inline-block;
           padding: 5px;
           .fas {
+            @include transition(all 0.5s ease-in-out);
             color: map-get($color, white);
             &:hover {
               color: map-get($color, orange);
@@ -49,11 +56,11 @@
     float: left;
     padding-left: 240px;
     .login {
+      @extend %ol-bd;
+      @include transition(all 0.5s ease-in-out);
       height: 40px;
       color: map-get($color, white);
       background: map-get($color, black);
-      outline: none;
-      border: none;
       cursor: pointer;
       &.log1 {
         width: 70px;
@@ -83,6 +90,7 @@
       right: 134px;
     }
     .cart-shop {
+      @include transition(all 0.5s ease-in-out);
       position: absolute;
       text-decoration: none;
       padding: 10px 13px 14px;
@@ -104,6 +112,7 @@
       display: inline-block;
       padding-right: 40px;
       .a-nav {
+        @include transition(all 0.5s ease-in-out);
         color: map-get($color, black);
         font-weight: 700;
         text-decoration: none;

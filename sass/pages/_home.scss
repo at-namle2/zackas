@@ -12,6 +12,18 @@
       width: 100%;
     }
   }
+  .fix {
+    position: relative;
+    .mens {
+      position: absolute;
+      left: 0;
+      bottom: 30px;
+      padding: 10px 30px;
+      color: map-get($color, black);
+      line-height: 30px;
+      background: map-get($color, white);
+    }
+  }
 }
 .new-arrivals {
   padding-bottom: 30px;
