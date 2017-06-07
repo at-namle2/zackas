@@ -21,7 +21,7 @@
   .gallary-item {
     float: left;
     width: 260px;
-    margin-right: 32px;
+    margin: 30px 32px 0 0;
     &:nth-child(4n+4) {
       margin-right: 0;
     }
@@ -30,6 +30,20 @@
     }
   .feture-desc {
     padding-top: 14px;
+    .aliquam {
+      color: map-get($color, gray);
+      padding: 12px 0px;
+      &:hover {
+        color: map-get($color, red);
+      }
+    }
+    .rating-start {
+      color: map-get($color, red);
+      .caption {
+        float: right;
+        font-weight: 700;
+      }
+     }
     }
   }
 }
@@ -40,12 +54,66 @@
     display: inline-block;
     padding-right: 40px;
     .fea {
-      color: map-get($color, black);
+      color: map-get($color, gray-2);
       text-decoration: none;
       font-weight: 700;
+      &:hover {
+        color: map-get($color, gray-3);
+      }
       &.active {
         color: map-get($color, orange);
       }
+    }
+  }
+}
+.exclusive {
+  height: 400px;
+  margin: 100px 0 100px;
+  &.ex-content {
+    background: url(../images/banner/1.jpg);
+    display: block;
+    text-align: center;
+    padding-top: 180px;
+    .for {
+      line-height: 60px;
+      color: map-get($color, white);
+      letter-spacing: 2px;
+    }
+  }
+  &.ex-content2 {
+    background: url(../images/banner/8.jpg) no-repeat;
+    background-size: cover;
+    display: block;
+    text-align: center;
+    padding-top: 180px;
+    .nirob {
+      color: map-get($color, white);
+      line-height: 36px;
+      .icon-img {
+        @include border-radius(50%);
+      }
+    }
+  }
+}
+.glasgery {
+  width: 100%;
+  .glasgery-item {
+    float: left;
+    width: 360px;
+    margin: 30px 30px 0 0;
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+    .item-img {
+      width: 100%;
+    }
+    .imgs {
+      width: 140px;
+      height: 130px;
+    }
+    .feature-img {
+      float: left;
+      width: 50%;
     }
   }
 }
