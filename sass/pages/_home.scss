@@ -117,3 +117,22 @@
     }
   }
 }
+.our-brands {
+  height: 280px;
+  background: map-get($color, gray-4);
+  margin: 70px 0 70px;
+  .vals {
+    padding-top: 70px;
+  }
+  .box-menu {
+    @extend %mr-pd;
+    .box-menu-item {
+      display: inline-block;
+      padding-right: 16px;
+      .img-brand {
+        width: 170px;
+        height: 84px;
+      }
+    }
+  }
+}
