@@ -108,11 +108,12 @@
         font-weight: 700;
         text-decoration: none;
         &.active {
-          border-bottom: 4px solid red;
+          border-bottom: 4px solid map-get($color, red);
           padding-bottom: 20px;
         }
         &:hover {
-          border-bottom: 4px solid red;
+          border-bottom: 4px solid map-get($color, red);
+          color: map-get($color, red);
           padding-bottom: 20px;
         }
       }

@@ -9,8 +9,7 @@
       width: 560px;
       margin-top: 6px;
       .mail-input {
-        border: none;
-        outline: none;
+        @extend %ol-bd;
         &.input1 {
           width: 70%;
           height: 50px;
@@ -37,11 +36,11 @@
       .menu-social {
         @extend %mr-pd;
         .menu-social-item {
+          @include border-radius(100%);
           display: inline-block;
           width: 50px;
           height: 50px;
           background: map-get($color, black-3);
-          border-radius: 100%;
           margin-right: 10px;
           border: 5px solid map-get($color, gray);
           .item-a {
@@ -49,7 +48,6 @@
             text-align: center;
             line-height: 47px;
             color: map-get($color, white);
-            font-size: 20px;
           }
           &:hover {
           background: map-get($color, orange);
@@ -117,6 +115,7 @@
       @extend %mr-pd;
       .menu-pay-item {
         display: inline-block;
+        padding-right: 10px;
       }
     }
   }
