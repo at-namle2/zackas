@@ -60,3 +60,65 @@
     }
   }
 }
+.zackas-fter {
+  background: map-get($color, black-3);
+  .gallary-zac {
+    width: 100%;
+    .gallary-zac-item {
+      float: left;
+      width: 25%;
+      padding: 76px 0 76px;
+      .nisl {
+        padding: 30px 0 30px;
+        line-height: 24px;
+        color: map-get($color, gray-5);
+      }
+      .reading-a {
+        color: map-get($color, gray-5);
+      }
+      .customer-service {
+        color: map-get($color, gray-5);
+        padding-bottom: 60px;
+      }
+      .site-a {
+        text-decoration: none;
+        color: map-get($color, gray-5);
+        line-height: 24px;
+        &:before {
+          content: " - ";
+          padding-right: 8px;
+        }
+      }
+      .address {
+        color: map-get($color, gray-5);
+        line-height: 26px;
+        .txt {
+          padding-left: 20px;
+          display: inline-block;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+}
+.devitem {
+  background: map-get($color, black-2);
+  height: 68px;
+  .rever {
+    padding-top: 15px;
+    .reserved {
+      float: left;
+      padding-top: 10px;
+      color: map-get($color, gray-5);
+    }
+  .pay {
+    float: right;
+    .menu-pay {
+      @extend %mr-pd;
+      .menu-pay-item {
+        display: inline-block;
+      }
+    }
+  }
+ }
+}
