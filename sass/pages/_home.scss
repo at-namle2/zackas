@@ -49,6 +49,7 @@
 }
 .menu-feature {
   @extend %mr-pd;
+  @include transition(all 0.5s ease-in-out);
   padding: 80px 0 30px;
   .main-feature-item {
     display: inline-block;

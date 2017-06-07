@@ -141,12 +141,12 @@
       letter-spacing: 4px;
     }
     .btn {
+      @extend %ol-bd;
+      @include transition(all 0.5s ease-in-out);
       width: 126px;
       height: 40px;
       color: map-get($color, white);
       background: map-get($color, black);
-      outline: none;
-      border: none;
       margin: 20px 340px;
       &:hover {
         background: map-get($color, orange);
