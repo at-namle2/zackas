@@ -20,8 +20,8 @@
       left: 0;
       bottom: 30px;
       padding: 10px 30px;
-      color: map-get($color, black);
       line-height: 30px;
+      color: map-get($color, black);
       background: map-get($color, white);
     }
     &:hover {
@@ -139,7 +139,6 @@
   &.ex-content {
     background: url(../images/banner/1.jpg);
     display: block;
-    text-align: center;
     padding-top: 180px;
     .for {
       line-height: 60px;
@@ -151,7 +150,6 @@
     background: url(../images/banner/8.jpg) no-repeat;
     background-size: cover;
     display: block;
-    text-align: center;
     padding-top: 180px;
     .nirob {
       color: map-get($color, white);
@@ -218,6 +216,7 @@
     }
     .content-desc {
       .sit {
+        @include transition(all 0.5s linear);
         padding-top: 10px;
         &:hover {
           color: map-get($color, red);
@@ -229,14 +228,20 @@
       }
     }
     .read-more {
+      @include transition(all 0.5s linear);
       border-bottom: 1px solid map-get($color, gray-6);
       padding-bottom: 10px;
       &:hover {
         border-bottom: 1px solid map-get($color, red);
       }
       .more {
+        @include transition(all 0.5s linear);
         text-decoration: none;
         color: map-get($color, gray-6);
+        font-weight: 700;
+        &:hover {
+          color: map-get($color, orange);
+        }
       }
       .day-nov {
         float: right;
@@ -251,7 +256,6 @@
         @include transition(all 0.5s ease-in-out);
         position: absolute;
         content: "";
-        z-index: 1;
         top: 0;
         left: 0;
         width: 0;
@@ -263,25 +267,25 @@
         @include transition(all 0.5s ease-in-out);
         position: absolute;
         content: "";
-        width: 0;
-        height: 0;
         bottom: 0;
         right: 0;
+        width: 0;
+        height: 0;
         background-color: rgba(255, 255, 255, 0.25);
       }
     }
    &:hover {
-      .glas-a {
-         &:before {
-          height: 100%;
-          width: 100%;
-        }
-        &:after {
-          height: 100%;
-          width: 100%;
-        }
+    .glas-a {
+       &:before {
+        height: 100%;
+        width: 100%;
+      }
+      &:after {
+        height: 100%;
+        width: 100%;
       }
     }
+   }
   }
   .hover-img {
     position: relative;
@@ -297,7 +301,7 @@
       }
     }
   }
-  .hover {
+  .hover-gery {
     position: relative;
     .middle-hover {
       margin-top: -10px;
@@ -316,12 +320,6 @@
       }
       &.over1 {
         top: 1%;
-      }
-      &.over3 {
-        top: 0;
-      }
-      &.over4 {
-         top: 0;
       }
     }
     &:hover {
@@ -353,22 +351,14 @@
            width: 300px;
            height: 440px;
         }
-        &.over3 {
-           width: 300px;
-           height: 440px;
-        }
-        &.over4 {
-          width: 300px;
-          height: 200px;
-        }
       }
     }
   }
 }
 .our-brands {
+  margin: 70px 0 70px;
   height: 280px;
   background: map-get($color, gray-4);
-  margin: 70px 0 70px;
   .vals {
     padding-top: 70px;
   }
@@ -376,10 +366,11 @@
     @extend %mr-pd;
     .box-menu-item {
       display: inline-block;
-      padding-right: 16px;
+      padding-right: 14px;
       .img-brand {
         width: 170px;
         height: 84px;
+        border: 1px solid map-get($color, black);
       }
     }
   }
