@@ -276,13 +276,13 @@
          top: 0;
       }
       &.over1 {
-        top: 35%;
+        top: 1%;
       }
       &.over3 {
-        top: 0%;
+        top: 0;
       }
       &.over4 {
-         top: 65%;
+         top: 0;
       }
     }
     &:hover {
@@ -298,6 +298,10 @@
           display: inline-block;
           vertical-align: top;
           line-height: 50px;
+          &:hover {
+             background-color: map-get($color, red);
+             color: map-get($color, white);
+          }
         }
       }
       .overlay {
