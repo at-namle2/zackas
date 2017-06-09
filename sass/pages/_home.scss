@@ -52,6 +52,7 @@
     .aliquam {
       color: map-get($color, gray);
       padding: 12px 0px;
+      cursor: pointer;
       &:hover {
         color: map-get($color, red);
       }
@@ -205,6 +206,7 @@
       width: 50%;
       .mattis {
         color: map-get($color, gray-2);
+        cursor: pointer;
         &:hover {
           color: map-get($color, orange);
         }
@@ -239,6 +241,7 @@
       .sit {
         @include transition(all 0.5s linear);
         padding-top: 10px;
+        cursor: pointer;
         &:hover {
           color: map-get($color, red);
         }
