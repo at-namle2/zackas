@@ -1,4 +1,5 @@
-.theme-header {
+.top-header {
+  @extend %clearfix;
   background: map-get($color, black);
   .wrapper-header {
     .contact {
@@ -49,6 +50,7 @@
   }
 }
 .wrapper-logo {
+  @extend %clearfix;
   padding: 40px 0 40px;
   .logo {
     float: left;

@@ -1,4 +1,5 @@
 .gallery {
+  @extend %clearfix;
   width: 100%;
   padding: 70px 0 40px;
   .gallery-item {
@@ -36,6 +37,7 @@
   padding-bottom: 30px;
 }
 .gallary {
+  @extend %clearfix;
   width: 100%;
   .gallary-item {
     float: left;
@@ -68,51 +70,51 @@
   }
 .hover-img {
   position: relative;
-    .middle-hover {
-      margin-top: -10px;
-      position: absolute;
-      display: none;
-      text-align: center;
-      top: 50%;
-      width: 100%;
-      z-index: 9;
-      opacity: 0;
-      .only {
-        @extend %mr-pd;
-        .only-item {
-          @include transition(all 0.5s ease-in-out);
-          display: inline-block;
-          padding-right: 10px;
-          padding: 10px;
-          background: map-get($color, white);
-          .only-a {
-            color: map-get($color, black);
-            .fao {
-              &:hover {
-                color: map-get($color, white);
-              }
+  .middle-hover {
+    margin-top: -10px;
+    position: absolute;
+    display: none;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    z-index: 9;
+    opacity: 0;
+    .only {
+      @extend %mr-pd;
+      .only-item {
+        @include transition(all 0.5s ease-in-out);
+        display: inline-block;
+        padding-right: 10px;
+        padding: 10px;
+        background: map-get($color, white);
+        .only-a {
+          color: map-get($color, black);
+          .fao {
+            &:hover {
+              color: map-get($color, white);
             }
           }
-          &:hover {
-            background: map-get($color, orange);
-          }
+        }
+        &:hover {
+          background: map-get($color, orange);
         }
       }
     }
-    .overlay {
-      @extend %overlay;
-      top: 0;
+  }
+  .overlay {
+    @extend %overlay;
+    top: 0;
+  }
+  &:hover {
+    .middle-hover {
+      opacity: 1;
+      display: block;
     }
-    &:hover {
-      .middle-hover {
-        opacity: 1;
-        display: block;
-      }
-      .overlay {
-        height: 80%;
-      }
+    .overlay {
+      height: 80%;
     }
   }
+}
   .sale-pro {
     position: absolute;
     top: 12px;
@@ -183,6 +185,7 @@
   }
 }
 .glasgery {
+  @extend %clearfix;
   width: 100%;
   .glasgery-item {
     float: left;
